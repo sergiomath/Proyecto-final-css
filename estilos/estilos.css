@@ -2,13 +2,20 @@
   margin: 0;
 }
 @media (max-width:900px) {
+  header{
+    height: 15vw;
+  }
   .titulo { /* se coloca sombra,tamaño al título  */
+    height:60%;
     text-shadow:2px 2px #02010a;
-    font-size: 1.8vw;
+    font-size: 3vw;
     color: white;
   }
   .titulo h1{
     width: 100%;
+  }
+  div[class*="enlace"] a{/* dejamos el espaciado de los enlaces  */
+    font-size: 4vw;
   }
   div[class^="enlace"]{
     flex-basis: 33.3%;
@@ -42,7 +49,7 @@
     padding-top: 2vh;
   }
   footer{
-      height: 120vw;
+      height: 120vh;
   }
   .contenedor-pie{
     width: 100%;
@@ -52,7 +59,8 @@
     text-align: center;
   }
   .contenedor-pie>div{
-    font-size: 2.1vh;
+    font-size: 4vw;
+    padding: 4%;
     box-sizing: border-box;
   }
 }
@@ -68,6 +76,9 @@
     display: inline-flex;
     padding-right:2em;
     flex-basis: 33.3%;
+  }
+  div[class*="enlace"] a{/* dejamos el espaciado de los enlaces  */
+    font-size: 3vw;
   }
   .titulo ,.contenedor-enlaces{ /* como se uso bloques , se organizan */
     display:inline-flex;
@@ -133,12 +144,7 @@ header{
   animation-name: slidein;
   animation-duration: 1s;
 }
-#contenido{
-  max-width: 900px;
-  margin: 0 auto;
-}
 div[class*="enlace"] a{/* dejamos el espaciado de los enlaces  */
-  font-size: 2.4vw;
   text-decoration: none;
   color: white;
 }
